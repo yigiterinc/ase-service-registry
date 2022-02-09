@@ -5,10 +5,10 @@ cache:
     - .m2/repostiory
 
 before_script:
-  - cd $CI_PROJECT_LOCATION
+  - cd $CI_PROJECT_DIR2
 
 after_script:
-  - cd $CI_PROJECT_LOCATION
+  - cd $CI_PROJECT_DIR2
 
 stages:
   - build
