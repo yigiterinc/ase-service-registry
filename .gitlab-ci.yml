@@ -21,6 +21,9 @@ stages:
 service-registry:build:
   stage: build
   script:
+    - echo "Start"
+    - pwd
+    - echo "End"
     - cd service-registry/ && mvn clean compile
   only:
     changes:
