@@ -5,6 +5,7 @@ cache:
     - .m2/repostiory
 
 before_script:
+  - echo $CI_PROJECT_DIR
   - cd $CI_PROJECT_DIR
 
 after_script:
