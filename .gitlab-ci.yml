@@ -2,7 +2,7 @@ image: maven:3.6.3-jdk-11
 
 cache:
   paths:
-    -.m2/repostiory
+    - .m2/repostiory
 
 before_script:
   - cd $CI_PROJECT_DIR
