@@ -50,6 +50,7 @@ service-registry:package:
 service-registry:publish:
   stage: publish
   image: docker:stable
+  privileged: true
 
   script:
     - cd service-registry
