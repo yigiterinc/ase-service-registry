@@ -50,7 +50,7 @@ service-registry:package:
 
 service-registry:publish:
   stage: publish
-  image: docker:20.10.12
+  image: docker:stable
 
   script:
     - cd service-registry
