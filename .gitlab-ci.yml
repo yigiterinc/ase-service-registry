@@ -58,7 +58,7 @@ service-registry:publish:
     - docker image tag $SR_IMAGE_NAME $CI_REGISTRY/$CI_PROJECT_LOCATION:$SR_IMAGE_NAME
     - docker push $CI_REGISTRY/$CI_PROJECT_LOCATION:$SR_IMAGE_NAME
   variables:
-    - SR_IMAGE_NAME: service-registry
+    SR_IMAGE_NAME: service-registry
   only:
     changes:
       - service-registry/*/**
