@@ -23,7 +23,7 @@ service-registry:build:
     - cd service-registry/ && mvn clean compile
   only:
     changes:
-      service-registry/**/*
+      - service-registry/**/*
 
 
 service-registry:test:
