@@ -6,6 +6,7 @@ cache:
 
 before_script:
   - pwd
+  - echo "CI Project Dir:" $CI_PROJECT_DIR
   - cd $CI_PROJECT_DIR
 
 after_script:
@@ -21,9 +22,6 @@ stages:
 service-registry:build:
   stage: build
   script:
-    - echo "Start"
-    - pwd
-    - echo "End"
     - cd service-registry/ && mvn clean compile
   only:
     changes:
