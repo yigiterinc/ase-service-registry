@@ -1,4 +1,5 @@
 FROM bellsoft/liberica-openjdk-alpine-musl:17
+
 EXPOSE 8761
 
 CMD echo "********************************************************"
