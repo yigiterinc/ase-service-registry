@@ -1,6 +1,6 @@
 FROM bellsoft/liberica-openjdk-alpine-musl:17
 CMD echo "********************************************************"
-CMD echo "Starting myapp"
+CMD echo "Starting service-registry"
 CMD echo "********************************************************"
 
 CMD java -Dserver.port=$SERVER_PORT \
